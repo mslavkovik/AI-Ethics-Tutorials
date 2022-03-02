@@ -1,0 +1,116 @@
+A description of the adult dataset.
+
+Number of datapoints:
+1000, 700 classified as good credit and 300 bad credit.
+
+Which features are used:
+German name: laufkont
+English name: status
+Content: status of the debtor's checking account with the bank (categorical)
+
+German name: laufzeit
+English name: duration
+Content: credit duration in months (quantitative)
+
+German name: moral
+English name: credit_history
+Content: history of compliance with previous or concurrent credit contracts (categorical)
+
+German name: verw
+English name: purpose
+Content: purpose for which the credit is needed (categorical)
+
+German name: hoehe
+English name: amount
+Content: credit amount in DM (quantitative; result of monotonic transformation; actual data and type of
+transformation unknown)
+
+German name: sparkont
+English name: savings
+Content: debtor's savings (categorical)
+
+German name: beszeit
+English name: employment_duration
+Content: duration of debtor's employment with current employer (ordinal; discretized quantitative)
+
+German name: rate
+English name: installment_rate
+Content: credit installments as a percentage of debtor's disposable income (ordinal; discretized quantitative)
+
+German name: famges
+English name: personal_status_sex
+Content: combined information on sex and marital status; categorical; sex cannot be recovered from the
+variable, because male singles and female non-singles are coded with the same code (2); female widows cannot
+be easily classified, because the code table does not list them in any of the female categories
+
+German name: buerge
+English name: other_debtors
+Content: Is there another debtor or a guarantor for the credit? (categorical)
+
+German name: wohnzeit
+English name: present_residence
+Content: length of time (in years) the debtor lives in the present residence (ordinal; discretized quantitative)
+
+German name: verm
+English name: property
+Content: the debtor's most valuable property, i.e. the highest possible code is used. Code 2 is used, if codes 3
+or 4 are not applicable and there is a car or any other relevant property that does not fall under variable
+sparkont. (ordinal)
+
+German name: alter
+English name: age
+Content: age in years (quantitative)
+
+German name: weitkred
+English name: other_installment_plans
+Content: installment plans from providers other than the credit-giving bank (categorical)
+
+German name: wohn
+English name: housing
+Content: type of housing the debtor lives in (categorical)
+
+German name: bishkred
+English name: number_credits
+Content: number of credits including the current one the debtor has (or had) at this bank (ordinal, discretized
+quantitative); contrary to Fahrmeir and HamerleÃ¢â‚¬â„¢s (1984) statement, the original data values are not available.
+
+German name: beruf
+English name: job
+Content: quality of debtor's job (ordinal)
+
+German name: pers
+English name: people_liable
+Content: number of persons who financially depend on the debtor (i.e., are entitled to maintenance) (binary,
+discretized quantitative)
+
+German name: telef
+English name: telephone
+Content: Is there a telephone landline registered on the debtor's name? (binary; remember that the data are
+from the 1970s)
+
+German name: gastarb
+English name: foreign_worker
+Content: Is the debtor a foreign worker? (binary)
+
+German name: kredit
+English name: credit_risk
+Content: Has the credit contract been complied with (good) or not (bad) ? (binary)
+
+Where does the dataset originate from: 
+
+The data originates from Häußler (1979, 1981) and Fahrmeir and Hamerle (1981, 1984) and is sampled from 
+	1973-1975 and comes from a large regional bank in Southern Germany. This is a updated version
+	from Grömping, U. (2019) and more can be read on it from the statistics and the background here:
+	http://www1.beuth-hochschule.de/FB_II/reports/Report-2019-004.pdf 
+
+For what purpose it was collected and by whom (copy paste from source is ok, but cite url or bibtex):
+It was donated to the UCI from prof. Hans Hoffmann from Hamburg university in 1994. Can be accessed:
+https://archive.ics.uci.edu/ml/datasets/South+German+Credit+%28UPDATE%29 
+
+Interesting observations which led to the updated version:
+for example,creditability of a debtor would become worse when changing the 
+credit history variable to “no credits
+taken/all credits paid back duly” and better for changing the status variable to “no checking account” (as
+opposed to, e.g., an account at the credit-giving bank with a good balance). Further inspection showed
+that there are more implausibilities, e.g. that more than 90% of the debtors are supposed to be foreign
+workers, and that the data set apparently does not contain any single females.

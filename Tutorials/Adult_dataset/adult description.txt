@@ -1,0 +1,69 @@
+A description of the adult dataset.
+
+Number of data points before removing missing values: 32 561
+Number of data points after removing missing values: 30 162
+
+which features are used:
+salary: >50K, <=50K
+
+age: Continuos value
+
+workclass: Private, Self-emp-not-inc, Self-emp-inc, Federal-gov, Local-gov, State-gov,
+	   Without-pay, Never-worked.
+
+fnlwgt: continuous. Stands for final weight a weight assigned to each entry representing
+	"similar charcteristics, demographically" Aka, race, education and social background.
+	Note it is not standardized across different states.
+
+education: Bachelors, Some-college, 11th, HS-grad, Prof-school, Assoc-acdm, Assoc-voc,
+	   9th, 7th-8th, 12th, Masters, 1st-4th, 10th, Doctorate, 5th-6th, Preschool.
+
+education-num: continuous.
+
+marital-status: Married-civ-spouse, Divorced, Never-married, Separated,
+		Widowed, Married-spouse-absent, Married-AF-spouse.
+
+occupation: Tech-support, Craft-repair, Other-service, Sales, Exec-managerial,
+	    Prof-specialty, Handlers-cleaners, Machine-op-inspct, Adm-clerical, Farming-fishing,
+	    Transport-moving, Priv-house-serv, Protective-serv, Armed-Forces.
+
+relationship: Wife, Own-child, Husband, Not-in-family, Other-relative, Unmarried.
+
+race: White, Asian-Pac-Islander, Amer-Indian-Eskimo, Other, Black.
+
+sex: Female, Male.
+
+capital-gain: continuous.
+
+capital-loss: continuous.
+
+hours-per-week: continuous.
+
+native-country: United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc),
+		India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines,
+		Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, 
+		Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala,
+		Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru,
+		Hong Kong, Holand-Netherlands
+
+where does the dataset originate from: 
+This data was extracted from the census bureau database but can now be accessed through the UCI archive:
+https://archive.ics.uci.edu/ml/datasets/adult 
+from 1996
+Donor: Ronny Kohavi and Barry Becker,
+        Data Mining and Visualization
+        Silicon Graphics.
+        e-mail: ronnyk@sgi.com for questions.
+
+for what purpose it was collected and by whom (copy paste from source is ok, but cite url or bibtex):
+
+ First cited in "Scaling up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid":
+    author={Ron Kohavi},
+    booktitle={Proceedings of the Second International Conference on
+               Knowledge Discovery and Data Mining},
+    year = 1996,
+
+ Cant seem to find why it was collected other than the Census bureau decided to do so. In the article they
+ use it for predicting whether someone makes more or less than 50K$
+ 
+
