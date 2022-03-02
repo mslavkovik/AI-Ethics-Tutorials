@@ -4,9 +4,33 @@ This is a collection of tutorials on explainability and fairness methods. They a
 
 The tutorial use X datasets. 
 
-DATASET1- decription and link
+DATASET1- Adult dataset decription and link
+This data was extracted from the census bureau database (USA) but can now be accessed through the UCI archive:
+https://archive.ics.uci.edu/ml/datasets/adult 
+from 1996
+The dataset classifies whether people make more or less than 50K$ a year based on features they have availble at the census bureau.
 
-...
+For a more detailed description: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Adult_dataset/adult%20description.txt 
+For a tutorial: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Adult_dataset/Adult%20dataset.ipynb
+
+For a Lime tutorial using this dataset: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Lime%20tutorial/Lime%20explanations%20on%20adult%20dataset.ipynb
+
+DATASET2- Portugal students
+This data was extracted by Paulo Cortez, University of Minho, GuimarÃ£es, Portugal, http://www3.dsi.uminho.pt/pcortez
+And can be accesed here: https://archive.ics.uci.edu/ml/datasets/student+performance 
+
+This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks. Important note: the target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see paper source for more details).
+
+For a detailed description: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Portugal_students/portugal-students.txt
+For a tutorial: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Portugal_students/Portugal.ipynb
+
+DATASET3 - SOUTH GERMAN CREDIT Data
+This dataset classifies people described by a set of attributes as good or bad credit risks. The data originates from Häußler (1979, 1981) and Fahrmeir and Hamerle (1981, 1984) and is sampled from 	1973-1975 and comes from a large regional bank in Southern Germany. This is a updated version
+	from Grömping, U. (2019) and more can be read on it from the statistics and the background here:
+	http://www1.beuth-hochschule.de/FB_II/reports/Report-2019-004.pdf 
+  
+For a detailed description: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/SouthGerman_tutorial/South_german_description.txt
+For a tutorial: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/SouthGerman_tutorial/SGerman_credit.ipynb
 
 DATASET N - decroption and link 
 
