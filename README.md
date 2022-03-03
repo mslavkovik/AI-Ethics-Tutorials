@@ -4,63 +4,61 @@ This is a collection of tutorials on explainability and fairness methods. They a
 
 
 ## Datasets in the tutorial
-The tutorial use X datasets. 
+The tutorial uses 5 datasets. We describe each. 
 
-### DATASET1- Adult dataset decription and link
-This data was extracted from the census bureau database (USA) but can now be accessed through the UCI archive:
-https://archive.ics.uci.edu/ml/datasets/adult 
-from 1996
-The dataset classifies whether people make more or less than 50K$ a year based on features they have availble at the census bureau.
+### DATASET 1- Adult dataset decription and link
+This data was extracted from the census bureau database (USA) from 1996 and can now be accessed through the [UCI archive](https://archive.ics.uci.edu/ml/datasets/adult).
 
-For a more detailed description: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Adult_dataset/adult%20description.txt 
-For a tutorial: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Adult_dataset/Adult%20dataset.ipynb
 
-For a Lime tutorial using this dataset: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Lime%20tutorial/Lime%20explanations%20on%20adult%20dataset.ipynb
+The dataset is labeled with two clases: whether people make more or less than 50K$ a year. The clases are based on features availble at the census bureau.
 
-### DATASET2- Portugal students
-This data was extracted by Paulo Cortez, University of Minho, GuimarÃ£es, Portugal, http://www3.dsi.uminho.pt/pcortez
-And can be accesed here: https://archive.ics.uci.edu/ml/datasets/student+performance 
+[This](https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Adult_dataset/adult%20description.txt) is a more detailed description of the dataset.   
 
-This data approach student achievement in secondary education of two Portuguese schools. The data attributes include student grades, demographic, social and school related features) and it was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [Cortez and Silva, 2008], the two datasets were modeled under binary/five-level classification and regression tasks. Important note: the target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see paper source for more details).
+Code for visualising various aspects of the dataset can be accessed [here](https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Adult_dataset/Adult%20dataset.ipynb). 
 
-For a detailed description: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Portugal_students/portugal-students.txt
-For a tutorial: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Portugal_students/Portugal.ipynb
 
-### DATASET3 - SOUTH GERMAN CREDIT Data
-This dataset classifies people described by a set of attributes as good or bad credit risks. The data originates from Häußler (1979, 1981) and Fahrmeir and Hamerle (1981, 1984) and is sampled from 	1973-1975 and comes from a large regional bank in Southern Germany. This is a updated version
-	from Grömping, U. (2019) and more can be read on it from the statistics and the background here:
-	http://www1.beuth-hochschule.de/FB_II/reports/Report-2019-004.pdf 
+### DATASET 2- Portugal students
+This data was extracted by [Paulo Cortez](http://www3.dsi.uminho.pt/pcortez), University of Minho, Guimães, Portugal, and can be accesed [here](https://archive.ics.uci.edu/ml/datasets/student+performance).  
+
+This dataset describes student achievement in secondary education of two Portuguese schools. The data attributes (features) include student grades, demographic, social and school related features. The data  was collected by using school reports and questionnaires. Two datasets are provided regarding the performance in two distinct subjects: Mathematics (mat) and Portuguese language (por). In [[Cortez and Silva, 2008](http://www3.dsi.uminho.pt/pcortez/student.pdf)], the two datasets were modeled under binary/five-level classification and regression tasks. 
+
+#### Important note
+The target attribute G3 has a strong correlation with attributes G2 and G1. This occurs because G3 is the final year grade (issued at the 3rd period), while G1 and G2 correspond to the 1st and 2nd period grades. It is more difficult to predict G3 without G2 and G1, but such prediction is much more useful (see [[Cortez and Silva, 2008](http://www3.dsi.uminho.pt/pcortez/student.pdf)] for more details).
+
+For a detailed description of the dataset go [here](https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Portugal_students/portugal-students.txt).
+
+Code for visualsiation of aspects of the dataset can be found [here](https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Portugal_students/Portugal.ipynb). 
+
+### DATASET 3 - SOUTH GERMAN CREDIT Data
+This dataset containes information about people who are classified into two clasess: good or bad credit risks. The data is sampled from 1973-1975 and comes from a large regional bank in Southern Germany. We use an updated version of the dataset from
+ from [Grömping, U. (2019)](http://www1.beuth-hochschule.de/FB_II/reports/Report-2019-004.pdf), where one can find more information about the dataset background.
+	 
   
-For a detailed description: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/SouthGerman_tutorial/South_german_description.txt
-For a tutorial: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/SouthGerman_tutorial/SGerman_credit.ipynb
+For a detailed description click [here](https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/SouthGerman_tutorial/South_german_description.txt). 
+Code for visualsiation of aspects of the dataset can be found [here](https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/SouthGerman_tutorial/SGerman_credit.ipynb). 
 
-DATASET N - decroption and link 
 
-### DATASET4 - South German Credit Data - Modified
-This is the dataset 3 that is modified so that it can be used with post-processing bias mitigation. The original South German Credit dataset must be replaced with this version for Fair 2 and Fair 3 tutorials to work. 
+### DATASET 4 - South German Credit Data - Modified
+This is the dataset 3 that is modified so that it can be used with post-processing bias mitigation. The original South German Credit dataset must be replaced with this version for Fair 2 and Fair 3 tutorials (see bellow) to work. 
 To download this modified version [click here](Tutorials/Fair_tutorials/german). The instructions on how to replace the original South German Dataset is available in the [Fair 2 notebook.](Tutorials/Fair_tutorials/0_in_profess_fair.ipynb)
 
-The content of the dataset and the labels are the same as the dataset 3. The labels were reassigned so that it works with the aif360 toolkit. 
+The content of the dataset and the labels are the same as the dataset 3. The labels were reassigned so that it works with the [AIF360 toolkit](https://aif360.mybluemix.net). 
 
 
-### Fashion-MNIST Dataset. 
+### DATASET 5 - Fashion-MNIST Dataset. 
 
 Fashion-MNIST is a drop in replacement dataset for the famous [MNIST dataset](http://yann.lecun.com/exdb/mnist/). This dataset consists of a training set of 60,000 examples and test set of 10,000 examples. Each example is an image of 28x28 grayscale and each example is associated with a label from one of the 10 cloasses. The 10 classes belongs to one of type of clothing. A detailed description of the dataaset is available [here](https://github.com/zalandoresearch/fashion-mnist)
 
 ## Fairness tutorials
 
-[Describe what one can do. What is available] 
-Either copy paste the "read me" or link to it. 
-
-
-All the fairness tutorials (that Than's has made) are built on the German Dataset 
+All the fairness tutorials are built on the German Dataset 
 
 There are three tuorials for fairness as follows:
 1. German Credit Dataset analysis using Aequitas [link](Tutorials/Fair_tutorials/0_Aequitas%20German%20Dataset.ipynb)
 2. Performing in processing bias migitagation with Gerry Fair Classifier on German Credit Dataset  [link](Tutorials/Fair_tutorials/0_in_profess_fair.ipynb)
 3. Performing post processing bias migitagation with calibrated odds-equalizing post-processing algorithm on the German Credit Dataset [link](Tutorials/Fair_tutorials/0_postprocessing_fair.ipynb)
 
-Each of the fairness tutorials are described in deails in their own paragraphs as follows.
+Each of the fairness tutorials are described in deails in their own paragraphs.
 All toutirals should be self documented in their own Juypter notebooks. 
 Note: To run tutorial 2 and 3  [common_utils.py](Tutorials/Fair_tutorials/common_utils.py) must be in the same folder.
 
@@ -100,6 +98,9 @@ CalibratedEqOddsPostprocessing method is then used to apply post-processing bias
 
 
 ### XAI tutorials
+
+## Explainability Tutorials with LIME
+The Lime tutorial uses the DATASET 1: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Lime%20tutorial/Lime%20explanations%20on%20adult%20dataset.ipynb
 
 ## Explainability Tutorials with SHAP
 There are two explainability tutorials. They are as follows:
