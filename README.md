@@ -38,14 +38,14 @@ DATASET N - decroption and link
 
 ### DATASET4 - South German Credit Data - Modified
 This is the dataset 3 that is modified so that it can be used with post-processing bias mitigation. The original South German Credit dataset must be replaced with this version for Fair 2 and Fair 3 tutorials to work. 
-To download this modified version [click here](Tutorials\Fair_tutorials\german). The instructions on how to replace the original South German Dataset is available in the [Fair 2 notebook.](Tutorials/Fair_tutorials/0_in_profess_fair.ipynb)
+To download this modified version [click here](Tutorials/Fair_tutorials/german). The instructions on how to replace the original South German Dataset is available in the [Fair 2 notebook.](Tutorials/Fair_tutorials/0_in_profess_fair.ipynb)
 
 The content of the dataset and the labels are the same as the dataset 3. The labels were reassigned so that it works with the aif360 toolkit. 
 
 
 ### Fashion-MNIST Dataset. 
 
-Fashion-MNIST is a drop in replacement dataset for the famous [MNIST dataset](http://yann.lecun.com/exdb/mnist/). This dataset consists of a training set of 60,000 examples and test set of 10,000 examples. Each example is an image of 28x28 grayscale and each example is associated with a label from one of the 10 cloasses. The 10 classes belongs to one of type of clothing. A detailed discribtion of the dataaset is available [here](https://github.com/zalandoresearch/fashion-mnist)
+Fashion-MNIST is a drop in replacement dataset for the famous [MNIST dataset](http://yann.lecun.com/exdb/mnist/). This dataset consists of a training set of 60,000 examples and test set of 10,000 examples. Each example is an image of 28x28 grayscale and each example is associated with a label from one of the 10 cloasses. The 10 classes belongs to one of type of clothing. A detailed description of the dataaset is available [here](https://github.com/zalandoresearch/fashion-mnist)
 
 ## Fairness tutorials
 
@@ -54,10 +54,9 @@ Either copy paste the "read me" or link to it.
 
 
 All the fairness tutorials (that Than's has made) are built on the German Dataset 
-TODO: write a short description about the german dataset
 
 There are three tuorials for fairness as follows:
-1. German Credit Dataset analysis using Aequitas [link](Tutorials/Fair_tutorials/0_Aequitas German Dataset.ipynb)
+1. German Credit Dataset analysis using Aequitas [link](Tutorials/Fair_tutorials/0_Aequitas%20German%20Dataset.ipynb)
 2. Performing in processing bias migitagation with Gerry Fair Classifier on German Credit Dataset  [link](Tutorials/Fair_tutorials/0_in_profess_fair.ipynb)
 3. Performing post processing bias migitagation with calibrated odds-equalizing post-processing algorithm on the German Credit Dataset [link](Tutorials/Fair_tutorials/0_postprocessing_fair.ipynb)
 
@@ -75,7 +74,7 @@ This tutorial explores the German Dataset with some plotting, train a simple SVC
 
 [Aequitas](https://github.com/dssg/aequitas) is built to audit the output of machine learning models. Therefore, the column with name "score" is created with the score from the machine learning model we just trained. To find out the biases in the machine learning data ii fmachine learning model, the origial dataset with the "score" column is necessary. Therefore, auditing fairness for the disparity tolerence between age groups and sex groups are performed. 
 
-[Access the tutorial here](Tutorials/Fair_tutorials/0_Aequitas German Dataset.ipynb)
+[Access the tutorial here](Tutorials/Fair_tutorials/0_Aequitas%20German%20Dataset.ipynb)
 
 ### Fair 2 - Performing in-processing bias migitagation with Gerry Fair Classifier on German Credit Dataset
 Dataset: German Dataset (modified German Dataset is required. Check the notebook for instructions)
@@ -105,7 +104,7 @@ CalibratedEqOddsPostprocessing method is then used to apply post-processing bias
 ## Explainability Tutorials with SHAP
 There are two explainability tutorials. They are as follows:
 1. Census income classification with LightGBM [link](Tutorials/Explain_tutorials/SHAP_Fashion_Mnist_Explainer.ipynb)
-2. Fashion-MNIST SHAP DeepExplainer  [link](Tutorials/Explain_tutorials/SHAP_Census income classification with LightGBM.ipynb)
+2. Fashion-MNIST SHAP DeepExplainer  [link](Tutorials/Explain_tutorials/SHAP_Census%20income%20classification%20with%20LightGBM.ipynb)
 
 Each tutorial is descirbed in their own sections in details
 
@@ -126,4 +125,4 @@ Currently the tensor flow version has to be 2.5.0 as the DeepExplainer will not 
 
 In this tutorial, tensorflow with Kreas is used to create a simple convolutional neural network and trained that network to recognize 10 classes of clothings. Though it is a relative simple model, the training can take hours on a computer without hardware accelerated training. Therefore it is recommended just to load the trained model that is available in " fashion_mnist.zip". After the model is trained or loaded from the files, DeepExplainer of SHAP library is used to create SHAP values. The SHAP values are then visualized using image_plot on the subset of the Fashion-MNIST dataset. 
 
-[Access the tutorial here](Tutorials/Explain_tutorials/SHAP_Census income classification with LightGBM.ipynb) 
+[Access the tutorial here](Tutorials/Explain_tutorials/SHAP_Census%20income%20classification%20with%20LightGBM.ipynb) 
