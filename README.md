@@ -100,7 +100,7 @@ CalibratedEqOddsPostprocessing method is then used to apply post-processing bias
 ### XAI tutorials
 
 ## Explainability Tutorials with LIME
-The Lime tutorial uses the DATASET 1: https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Lime%20tutorial/Lime%20explanations%20on%20adult%20dataset.ipynb
+The Lime tutorial which is a tool that explains which features have the most effect on a classification. A tutorial for this is availble here> https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Lime%20tutorial/Lime_explanations_on_adult_dataset.ipynb 
 
 ## Explainability Tutorials with SHAP
 There are two explainability tutorials. They are as follows:
