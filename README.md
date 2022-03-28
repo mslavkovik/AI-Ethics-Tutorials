@@ -100,7 +100,7 @@ CalibratedEqOddsPostprocessing method is then used to apply post-processing bias
 ### XAI tutorials
 
 ## Explainability Tutorials with LIME
-The Lime tutorial which is a tool that explains which features have the most effect on a classification. A tutorial for this is availble here> https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Lime%20tutorial/Lime_explanations_on_adult_dataset.ipynb 
+The Lime tutorial which is a tool that explains which features have the most effect on a classification. A tutorial for this is availble [here](https://github.com/mslavkovik/AI-Ethics-Tutorials/blob/main/Tutorials/Lime%20tutorial/Lime_explanations_on_adult_dataset.ipynb).  
 It uses the adult dataset, which is explained above. LIME is often used with image classification where it can highlight which features of the image led to classification. Here it is used to highlight which features have the biggest impact on the algorithm which predicts whether someone makes more or less than 50K $ a year.
 
 ## Explainability Tutorials with SHAP
